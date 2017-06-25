@@ -20,21 +20,36 @@ function userinput () {
 	sentBtn.style.display="block"
 }
 
+function userexit(){
+		more.style.display="block";
+	sentBtn.style.display="none"
+}
 function addUserMes(value){
 	var talkBox=document.getElementById('talkBox')
 	var userMe=document.createElement('div')
 	userMe.className='usermessage'
 	var user_message=document.createElement('div')
 	var user_pic=document.createElement('i')
-	user_pic.className='bot_pic'
+	user_pic.className='user_pic'
 	user_message.className='message'
 	user_message.innerHTML=value
 	userMe.appendChild(user_message)
 	userMe.appendChild(user_pic)
 	talkBox.appendChild(userMe)
 }
-function addBotMes(){
-
+function addBotMes(value){
+	var talkBox=document.getElementById('talkBox')
+	var botMe=document.createElement('div')
+	botMe.className='botmessage'
+	var bot_message=document.createElement('div')
+	var bot_pic=document.createElement('i')
+	bot_pic.className='bot_pic'
+	bot_message.className='message'
+	bot_message.innerHTML=value
+	
+	botMe.appendChild(bot_pic)
+	botMe.appendChild(bot_message)
+	talkBox.appendChild(botMe)
 }
 
 sentBtn.addEventListener('click',sentmessage)
@@ -45,6 +60,7 @@ function sentmessage(){
 	console.log('1')
 	if (sent_value != undefined) {
 	addUserMes(sent_value)}
+	addBotMes("哈哈哈")
   	var url = 'http://www.tuling123.com/openapi/api?&info='+ sent_value +'&dtype=json&key=82fb88e4e494415da7de531fbdb6bd8c&callback=infoUpdating'
    getJSON(url);
    input_box.value=' '

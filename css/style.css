@@ -16,7 +16,7 @@ html{
 	display: flex;
 	flex-direction:column;
 	width: 100vw;
-	height: 200vh;
+	height: 100vh;
 }
 header{
 	position: fixed;
