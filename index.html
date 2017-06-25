@@ -15,6 +15,7 @@
 	</header>
 
 	<div id="talkBox">
+
 			<div class="botmessage">
 				<i class="bot_pic"></i>
 				<div class="message">
@@ -22,11 +23,11 @@
 				</div>
 			</div>
 
-			<div class="usermessage">
-				<i class="user_pic"></i>
+			<div class="usermessage">				
 				<div class="message">
 					hhhhh
-				</div>
+				</div>	
+				<i class="user_pic"></i>
 			</div>
 	</div>
 
@@ -34,11 +35,15 @@
 
 	<footer id="footer">
 		<div class="footer_font rss"><i class="fa fa-rss" aria-hidden="true"></i></div>
-		<div id="text_input" class="footer_font rss"><input type="text"></div>
-		<div class="footer_font more"><i class="fa fa-times" aria-hidden="true"></i></div>
+
+		<div id="text_input" class="footer_font rss"><input type="text" id="input_box" onfocus="userinput()" ></div>
+
+		<div class="footer_font more" id="more"><i class="fa fa-times" aria-hidden="true"></i></div>
+		<div id="sent">发送</div>
 	<div class="footer_font smile"><i class="fa fa-meh-o" aria-hidden="true"></i></div>
 
 	</footer>
 </div>
+<script src="js/main.js"></script>
 </body>
 </html>

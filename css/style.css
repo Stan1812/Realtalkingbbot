@@ -39,31 +39,40 @@ margin-left: 3vw;
 }
 #talkBox{
 	flex: 10;
-	background-color: #ebebeb;
 	z-index: -1;
-	top: 10vh;
+	position: absolute;
+	top: 6vh;
+	padding: 0 5vw;
 }
-.botmessage {
-
-	width: 100vw;
+.botmessage ,.usermessage{
+	width: 90vw;
 	height: 10vh;
-	font-size: 5rem;
+	font-size: 3rem;
 	display: flex;
 	align-items: center;
+	margin: 3vh 0;
 }
-
-.bot_pic{
+.usermessage{
+	justify-content: flex-end;
+}
+.bot_pic,.user_pic{
 	height: 7vh;
 	width: 7vh;
-	background:red; 
-	margin-left: 5vw;
+background-size:cover;  
 }
 .message{
 	border:1px solid #666;
 	background: #13e982;
-	margin-left: 5vw;
+	margin:0 5vw;
 	border-radius:1vw;
 	padding: 1vh;
+}
+.bot_pic{
+	background-image:url(../imgs/02.jpg); 
+}
+.user_pic{
+	background-image:url(../imgs/01.jpg); 
+	background-size:cover; 
 }
  .message:before{
 	width: 3vh;
@@ -105,9 +114,13 @@ margin-left: 3vw;
 .rss{
 	margin-left: 2vw;
 }
-.smile,.more{
+.more{
 	float: right;
 	margin-right:2vw;
+}
+.smile{
+	position: absolute;
+	right: 15vw;
 }
 #text_input{
 	width:50vw;
@@ -119,4 +132,17 @@ margin-left: 3vw;
 	height: 3vh;
 	border:2px solid ;
 	border-color: transparent transparent #666 transparent ;
+}
+#sent{
+	width: 6vh;
+	height: 4vh;
+	line-height: 4vh;
+	text-align: center;
+	position: absolute;
+	right: 1vh;
+	top: 2vh;
+	font-size: 3rem;
+	background:#39CA34; 
+	display: none;
+	border-radius: 1rem;
 }
