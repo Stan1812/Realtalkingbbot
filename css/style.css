@@ -1,0 +1,122 @@
+/*头部#393a3f
+聊天背景#ebebeb
+编辑栏#f4f4f4
+信息背景#e5e5e5
+字体#353535
+边框#6f7378
+*/
+*{
+	padding: 0;
+	margin:0;
+}
+html{
+	font-size: 62.5%;
+}
+.mainwrapper{
+	display: flex;
+	flex-direction:column;
+	width: 100vw;
+	height: 200vh;
+}
+header{
+	position: fixed;
+	color: white;
+	flex: 1;
+	width: 100vw;
+	background-color: #393a3f;
+	font-size: 4rem;
+}
+.botname{
+display: inline-block;
+margin-left: 3vw;
+}
+#arrow{
+	margin: 1.4vh;
+}
+#user{
+	float: right;
+	margin: 1.5vh;
+}
+#talkBox{
+	flex: 10;
+	background-color: #ebebeb;
+	z-index: -1;
+	top: 10vh;
+}
+.botmessage {
+
+	width: 100vw;
+	height: 10vh;
+	font-size: 5rem;
+	display: flex;
+	align-items: center;
+}
+
+.bot_pic{
+	height: 7vh;
+	width: 7vh;
+	background:red; 
+	margin-left: 5vw;
+}
+.message{
+	border:1px solid #666;
+	background: #13e982;
+	margin-left: 5vw;
+	border-radius:1vw;
+	padding: 1vh;
+}
+ .message:before{
+	width: 3vh;
+	height: 3vh;
+	position: relative;
+	background:red;
+	transform: rotate(45deg);
+}
+#footer{
+	position:fixed;
+	height: 10vh;
+	width: 100vw;
+	bottom: 0;
+	background-color:#f4f4f4;
+	font-size: 5rem;
+	color:#353535;
+}
+.footer_font{
+	width: 5vh;
+	height: 5vh;
+	display: inline-block;
+	border: 2px solid #6f7378;
+	border-radius: 50%;margin-top: 1.5vh;
+}
+.footer_font i{
+	position: relative;
+}
+.fa-rss{
+	transform: rotate(45deg);
+	left: 2vw;
+}
+.fa-meh-o{
+	left: 1.5vw;
+}
+.fa-times{
+	transform: rotate(45deg);
+	left: 2vw;
+}
+.rss{
+	margin-left: 2vw;
+}
+.smile,.more{
+	float: right;
+	margin-right:2vw;
+}
+#text_input{
+	width:50vw;
+	border:none;
+}
+#text_input input{
+	margin-left: 4vw;
+	font-size: 3rem;
+	height: 3vh;
+	border:2px solid ;
+	border-color: transparent transparent #666 transparent ;
+}
