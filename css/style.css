@@ -129,9 +129,13 @@ background-size:cover;
 #text_input input{
 	margin-left: 4vw;
 	font-size: 3rem;
-	height: 3vh;
+	height: 5vh;
 	border:2px solid ;
 	border-color: transparent transparent #666 transparent ;
+	background-color: transparent;
+}
+input:focus{
+	border-color: border-color: transparent transparent #39CA34 transparent ;
 }
 #sent{
 	width: 6vh;
