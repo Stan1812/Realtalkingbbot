@@ -26,11 +26,13 @@ function userinput () {
 	more.style.display="none";
 	sentBtn.style.display="block"
 }
-
-function userexit(){
+var input_tragger = document.querySelector("input");
+input_tragger.onfcous = focus
+var fcous = function userexit(){
 		more.style.display="block";
 	sentBtn.style.display="none"
 }
+
 function addUserMes(value){
 	var talkBox=document.querySelector('#talkBox')
 	var userMe=document.createElement('div')
