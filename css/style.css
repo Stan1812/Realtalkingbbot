@@ -67,6 +67,7 @@ background-size:cover;
 	border-radius:1vw;
 	padding: 1vh;
 }
+
 .bot_pic{
 	background-image:url(../imgs/02.jpg); 
 }
@@ -91,8 +92,8 @@ background-size:cover;
 	color:#353535;
 }
 .footer_font{
-	width: 5vh;
-	height: 5vh;
+	width: 9vw;
+	height: 9vw;
 	display: inline-block;
 	border: 2px solid #6f7378;
 	border-radius: 50%;margin-top: 1.5vh;
