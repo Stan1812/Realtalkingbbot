@@ -1,6 +1,6 @@
 
-var sentBtn=document.getElementById('sent')
-var more=document.getElementById('more');
+var sentBtn=document.querySelector('#sent')
+var more=document.querySelector('#more');
 
 
 function getJSON(url) {
@@ -32,7 +32,7 @@ function userexit(){
 	sentBtn.style.display="none"
 }
 function addUserMes(value){
-	var talkBox=document.getElementById('talkBox')
+	var talkBox=document.querySelector('#talkBox')
 	var userMe=document.createElement('div')
 	userMe.className='usermessage'
 	var user_message=document.createElement('div')
@@ -45,7 +45,7 @@ function addUserMes(value){
 	talkBox.appendChild(userMe)
 }
 function addBotMes(value){
-	var talkBox=document.getElementById('talkBox')
+	var talkBox=document.querySelector('#talkBox')
 	var botMe=document.createElement('div')
 	botMe.className='botmessage'
 	var bot_message=document.createElement('div')
@@ -62,7 +62,7 @@ function addBotMes(value){
 
 sentBtn.addEventListener('click',sentmessage)
 function sentmessage(){
-	var input_box=document.getElementById('input_box')
+	var input_box=document.querySelector('#input_box')
 	var sent_value=input_box.value;
 	console.log(sent_value);
 	console.log('1')
