@@ -25,14 +25,14 @@ function getJSON(url) {
 function userinput () {
 	more.style.display="none";
 	sentBtn.style.display="block"
-}
-var input_tragger = document.querySelector("input");
+}/*  
+var input_tragger = document.querySelector("#input_box");
 input_tragger.onfcous = focus
-var fcous = function userexit(){
-		more.style.display="block";
-	sentBtn.style.display="none"
+var fcous = function userinput(){
+	more.style.display="none";
+	sentBtn.style.display="block"
 }
-
+ */
 function addUserMes(value){
 	var talkBox=document.querySelector('#talkBox')
 	var userMe=document.createElement('div')
