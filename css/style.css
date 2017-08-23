@@ -5,150 +5,149 @@
 字体#353535
 边框#6f7378
 */
-*{
-	padding: 0;
-	margin:0;
-}
-html{
-	font-size: 62.5%;
-}
-.mainwrapper{
-	display: flex;
-	flex-direction:column;
-	width: 100vw;
-	height: 100vh;
-}
-header{
-	position: fixed;
-	color: white;
-	flex: 1;
-	width: 100vw;
-	background-color: #393a3f;
-	font-size: 4rem;
-}
-.botname{
-display: inline-block;
-margin-left: 3vw;
-}
-#arrow{
-	margin: 1.4vh;
-}
-#user{
-	float: right;
-	margin: 1.5vh;
-}
-#talkBox{
-	flex: 10;
-	z-index: -1;
-	position: absolute;
-	top: 6vh;
-	padding: 0 5vw;
-}
-.botmessage ,.usermessage{
-	width: 90vw;
-	height: 10vh;
-	font-size: 3rem;
-	display: flex;
-	align-items: center;
-	margin: 3vh 0;
-}
-.usermessage{
-	justify-content: flex-end;
-}
-.bot_pic,.user_pic{
-	height: 7vh;
-	width: 7vh;
-background-size:cover;  
-}
-.message{
-	border:1px solid #666;
-	background: #13e982;
-	margin:0 5rem;
-	border-radius:1vw;
-	padding: 1vh;
+
+* {
+    padding: 0;
+    margin: 0;
 }
 
-.bot_pic{
-	background-image:url(../imgs/02.jpg);
-	background-size: cover; 
+html {
+    font-size: 62.5%;
 }
-.user_pic{
-	background-image:url(../imgs/01.jpg); 
-	background-size:cover; 
+
+.mainwrapper {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
 }
- .message:before{
-	width: 3rem;
-	height: 3rem;
-	position: relative;
-	background:red;
-	transform: rotate(45deg);
+
+header {
+    position: fixed;
+    color: white;
+    flex: 1;
+    width: 100vw;
+    background-color: #393a3f;
+    font-size: 0.6rem;
 }
-#footer{
-	position:fixed;
-	height: 14rem;
-	width: 100vw;
-	bottom: 0;
-	background-color:#f4f4f4;
-	font-size: 5rem;
-	color:#353535;
+
+.botname {
+    display: inline-block;
+    margin-left: 3vw;
 }
-.footer_font{
-	width: 7rem;
-	height: 7rem;
-	display: inline-block;
-	border: 2px solid #6f7378;
-	border-radius: 50%;margin-top: 1.5vh;
+
+#arrow {
+    margin: 1.4vh;
 }
-.footer_font i{
-	position: relative;
+
+#user {
+    float: right;
+    margin: 1.5vh;
 }
-.fa-rss{
-	transform: rotate(45deg);
-	left: 1.5rem;
+
+#talkBox {
+    flex: 10;
+    z-index: -1;
+    position: absolute;
+    top: 6vh;
+    padding: 0 5vw;
+    padding-bottom: 2rem;
 }
-.fa-meh-o{
-	left: 1.5rem;
+
+.botmessage,
+.usermessage {
+    width: 90vw;
+    font-size: 0.6rem;
+    display: flex;
+    align-items: center;
+    margin: 0.6rem 0;
 }
-.fa-times{
-	transform: rotate(45deg);
-	left: 1.5rem;
+
+.usermessage {
+    justify-content: flex-end;
 }
-.rss{
-	margin-left: 2rem;
+
+.bot_pic,
+.user_pic {
+    height: 1.2rem;
+    width: 1.2rem;
+    background-size: cover;
 }
-.more{
-	float: right;
-	margin-right:3rem;
+
+.message {
+    font-size: 0.4rem;
+    border: 1px solid #666;
+    background: #13e982;
+    margin: 0 0.2rem;
+    border-radius: 0.2rem;
+    padding: 0.2rem;
+    max-width: 60vw;
 }
-.smile{
-	position: absolute;
-	right: 13rem;
+
+.bot_pic {
+    background-image: url(../imgs/02.jpg);
+    background-size: cover;
 }
-#text_input{
-	width:50vw;
-	border:none;
+
+.user_pic {
+    background-image: url(../imgs/01.jpg);
+    background-size: cover;
 }
-#text_input input{
-	margin-left: 1rem;
-	font-size: 3rem;
-	height: 5rem;
-	border:2px solid ;
-	border-color: transparent transparent #666 transparent ;
-	background-color: transparent;
+
+#footer {
+    position: fixed;
+    height: 1.5rem;
+    width: 100vw;
+    bottom: 0;
+    background-color: #f4f4f4;
+    font-size: 0.7rem;
+    color: #353535;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
 }
-input:focus{
-	border-color: border-color: transparent transparent #39CA34 transparent ;
+
+.footer_font {
+    width: 1rem;
+    height: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid #6f7378;
+    border-radius: 50%;
 }
-#sent{
-	width: 10rem;
-	height: 6rem;
-	line-height: 6rem;
-	text-align: center;
-	position: absolute;
-	right: 2rem;
-	top: 3rem;
-	font-size: 3rem;
-	background:#39CA34; 
-	display: none;
-	border-radius: 1rem;
+
+.fa-rss,
+.fa-times {
+    transform: rotate(45deg);
+}
+
+#text_input {
+    width: 55vw;
+    border: none;
+}
+
+#text_input input {
+    font-size: 0.5rem;
+    height: 1rem;
+    border: 2px solid;
+    border-color: transparent transparent #666 transparent;
+    background-color: transparent;
+}
+
+input:focus {
+    outline: none;
+    border-color: transparent transparent #39CA34 transparent;
+}
+
+#sent {
+    width: 1rem;
+    line-height: 0.8rem;
+    text-align: center;
+    font-size: 0.35rem;
+    color: white;
+    background: rgba(96, 230, 66, 0.85);
+    display: none;
+    border-radius: 0.1rem;
+    margin: 0 0.2rem;
 }
