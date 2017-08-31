@@ -56,7 +56,6 @@ function addBotMes(value){
 	bot_message.className='message'
 	bot_message.style.background='white'
 	bot_message.innerHTML=value
-	
 	botMe.appendChild(bot_pic)
 	botMe.appendChild(bot_message)
 	talkBox.appendChild(botMe)
@@ -76,6 +75,7 @@ function sentmessage(){
    //getJSON(url);
    input_box.value=' '
 }
+//这个API在实际部署会跨域。。
 
 function success (text){
 	console.log(text);
